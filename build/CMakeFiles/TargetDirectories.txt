@@ -1,0 +1,3 @@
+/home/ssv/code/web/build/CMakeFiles/web.dir
+/home/ssv/code/web/build/CMakeFiles/edit_cache.dir
+/home/ssv/code/web/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/include/opencv4",
+                "/home/ssv/libraries_cpp/opencv/build/**",
+                "/home/ssv/libraries_cpp/opencv/opencv-4.x/**",
+                "/home/ssv/libraries_cpp/opencv/build/opencv2/**",
+                "/home/ssv/libraries_cpp/opencv/**",
+                 "/home/ssv/libraries_cpp/**"
+                // "/home/ssv/libraries_cpp/l_json/json/**",
+                // "/home/ssv/libraries_cpp/l_json/json/include/nlohmann/**",
+                // "/home/ssv/libraries_cpp/l_json/json/include/**"
+               // "/usr/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}

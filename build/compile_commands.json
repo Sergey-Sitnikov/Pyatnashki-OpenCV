@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/ssv/code/web/build",
+  "command": "/usr/bin/g++ -I/usr/include/X11 -isystem /usr/local/include/opencv4 -g -std=gnu++14 -o CMakeFiles/Pitnashki.dir/src/main.cpp.o -c /home/ssv/code/web/src/main.cpp",
+  "file": "/home/ssv/code/web/src/main.cpp"
+},
+{
+  "directory": "/home/ssv/code/web/build",
+  "command": "/usr/bin/g++ -I/usr/include/X11 -isystem /usr/local/include/opencv4 -g -std=gnu++14 -o CMakeFiles/Pitnashki.dir/src/pytnashki.cpp.o -c /home/ssv/code/web/src/pytnashki.cpp",
+  "file": "/home/ssv/code/web/src/pytnashki.cpp"
+}
+]

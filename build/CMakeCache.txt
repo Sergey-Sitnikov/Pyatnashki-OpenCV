@@ -14,21 +14,20 @@
 # EXTERNAL cache entries
 ########################
 
+//No help, variable specified on the command line.
+BUILD_SHARED_LIBS:UNINITIALIZED=OFF
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//Choose the type of build, options are: None Debug Release RelWithDebInfo
-// MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
+//No help, variable specified on the command line.
+CMAKE_BUILD_TYPE:STRING=Debug
 
-//Enable/Disable color output during build.
-CMAKE_COLOR_MAKEFILE:BOOL=ON
-
-//CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/g++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -53,8 +52,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
+//No help, variable specified on the command line.
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/gcc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -97,8 +96,8 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during RELWITHDEBINFO builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//Enable/Disable output of compile commands during generation.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
+//No help, variable specified on the command line.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 
 //Value Computed by CMake.
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=/home/ssv/code/web/build/CMakeFiles/pkgRedirects
@@ -109,8 +108,8 @@ CMAKE_INSTALL_PREFIX:PATH=/usr/local
 //Path to a program.
 CMAKE_LINKER:FILEPATH=/usr/bin/ld
 
-//Path to a program.
-CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/gmake
+//Program used to build from build.ninja files.
+CMAKE_MAKE_PROGRAM:FILEPATH=/home/ssv/.espressif/tools/ninja/1.11.1/ninja
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -390,10 +389,10 @@ X11_Xss_INCLUDE_PATH:PATH=X11_Xss_INCLUDE_PATH-NOTFOUND
 X11_Xss_LIB:FILEPATH=X11_Xss_LIB-NOTFOUND
 
 //Path to a file.
-X11_Xt_INCLUDE_PATH:PATH=X11_Xt_INCLUDE_PATH-NOTFOUND
+X11_Xt_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xt_LIB:FILEPATH=X11_Xt_LIB-NOTFOUND
+X11_Xt_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXt.so
 
 //Path to a file.
 X11_Xtst_INCLUDE_PATH:PATH=X11_Xtst_INCLUDE_PATH-NOTFOUND
@@ -417,10 +416,10 @@ X11_Xxf86misc_INCLUDE_PATH:PATH=X11_Xxf86misc_INCLUDE_PATH-NOTFOUND
 X11_Xxf86misc_LIB:FILEPATH=X11_Xxf86misc_LIB-NOTFOUND
 
 //Path to a file.
-X11_Xxf86vm_INCLUDE_PATH:PATH=X11_Xxf86vm_INCLUDE_PATH-NOTFOUND
+X11_Xxf86vm_INCLUDE_PATH:PATH=/usr/include
 
 //Path to a library.
-X11_Xxf86vm_LIB:FILEPATH=X11_Xxf86vm_LIB-NOTFOUND
+X11_Xxf86vm_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libXxf86vm.so
 
 //Path to a file.
 X11_dpms_INCLUDE_PATH:PATH=/usr/include
@@ -520,8 +519,6 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=24
 //Patch version of cmake used to create the current loaded cache
 CMAKE_CACHE_PATCH_VERSION:INTERNAL=0
-//ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
-CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/home/ssv/.espressif/tools/cmake/3.24.0/bin/cmake
 //Path to cpack program executable.
@@ -576,12 +573,10 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
-CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
-CMAKE_GENERATOR:INTERNAL=Unix Makefiles
+CMAKE_GENERATOR:INTERNAL=Ninja
 //Generator instance identifier.
 CMAKE_GENERATOR_INSTANCE:INTERNAL=
 //Name of generator platform.
